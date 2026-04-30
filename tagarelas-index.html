@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Tagarelas — Indicação de mulher pra mulher. Resultado pro seu negócio.</title>
+<meta name="description" content="Marketplace que conecta marcas de beleza, moda e bem-estar a creators mulheres reais. Pacote fechado, NF emitida, conteúdo aprovado por você.">
+<meta name="keywords" content="marketing de influência, creators mulheres, micro-influenciadores, beleza, moda, bem-estar, PME">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Tagarelas — Indicação de mulher pra mulher.">
+<meta property="og:description" content="Marketplace de creators mulheres para marcas de beleza, moda e bem-estar.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,400;9..144,1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1A0F1A;
+    --paper: #FBF4EE;
+    --paper-2: #F2E6DC;
+    --rose: #C04E70;
+    --rose-deep: #8E2D4E;
+    --terracotta: #D4805F;
+    --gold: #C8975A;
+    --sage: #7B8B6F;
+    --plum: #4A2538;
+    --line: rgba(26, 15, 26, 0.12);
+    --shadow: 0 1px 0 rgba(26,15,26,0.05), 0 14px 40px -12px rgba(74,37,56,0.18);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(circle at 15% 5%, rgba(192, 78, 112, 0.10), transparent 45%),
+      radial-gradient(circle at 90% 75%, rgba(212, 128, 95, 0.10), transparent 45%);
+  }
+
+  .display { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 600px) { .container { padding: 0 20px; } }
+
+  /* ---------- LOGO (opção 04 com tagline, destacado) ---------- */
+  .brand-logo {
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    position: relative;
+  }
+  .brand-name {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    color: var(--ink);
+    position: relative;
+    display: inline-block;
+  }
+  .brand-name::after {
+    content: '.';
+    color: var(--rose);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .brand-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    opacity: 0.7;
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--plum);
+  }
+  @media (max-width: 600px) {
+    .brand-name { font-size: 30px; }
+    .brand-tagline { font-size: 9px; letter-spacing: 0.18em; }
+  }
+
+  /* Versão grande pro hero */
+  .brand-logo-lg .brand-name { font-size: 48px; }
+  .brand-logo-lg .brand-tagline { font-size: 11px; margin-top: 14px; }
+
+  /* Nav com mais respiro */
+  .nav { padding: 28px 0 24px; }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; }
+  @media (max-width: 700px) { .nav-links { display: none; } }
+  .nav-links a { color: var(--ink); text-decoration: none; opacity: 0.75; transition: opacity 0.15s; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-cta {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 10px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    font-family: inherit;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-rose { background: var(--rose); color: var(--paper); }
+  .btn-secondary { background: transparent; color: var(--ink); border-color: var(--ink); }
+
+  /* ---------- HERO ---------- */
+  .hero { padding: 60px 0 100px; }
+  @media (max-width: 600px) { .hero { padding: 40px 0 60px; } }
+  .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px; align-items: center; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 88px);
+    margin-bottom: 28px;
+  }
+  .hero h1 em { font-style: italic; color: var(--rose); font-weight: 400; }
+  .hero-sub {
+    font-size: 19px;
+    max-width: 540px;
+    opacity: 0.78;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 600px) { .hero-sub { font-size: 17px; } }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+
+  .verticals { display: flex; gap: 10px; flex-wrap: wrap; }
+  .vertical-pill {
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: white;
+    border: 1px solid var(--line);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .hero-card-stack { position: relative; height: 480px; }
+  @media (max-width: 900px) { .hero-card-stack { height: 380px; max-width: 400px; margin: 0 auto; } }
+  .h-card {
+    position: absolute;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  .h-card-1 { top: 10px; left: 0; width: 280px; transform: rotate(-3deg); }
+  .h-card-2 { top: 100px; right: 0; width: 260px; transform: rotate(4deg); background: var(--rose-deep); color: var(--paper); border-color: var(--plum); }
+  .h-card-3 { bottom: 0; left: 60px; width: 290px; transform: rotate(-1.5deg); }
+  .h-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--terracotta), var(--rose));
+    margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-style: italic; font-weight: 600;
+    color: white; font-size: 18px;
+  }
+  .h-card-2 .h-avatar { background: linear-gradient(135deg, var(--gold), var(--terracotta)); }
+  .h-card-3 .h-avatar { background: linear-gradient(135deg, var(--sage), var(--gold)); }
+  .h-card h4 { font-family: 'Fraunces', serif; font-size: 18px; margin-bottom: 4px; font-weight: 600; }
+  .h-card p { font-size: 13px; opacity: 0.7; margin-bottom: 10px; }
+  .h-card-2 p { opacity: 0.85; }
+  .h-card .stat { display: flex; gap: 12px; font-size: 12px; }
+  .h-card .stat span strong { display: block; font-size: 16px; font-family: 'Fraunces', serif; }
+
+  /* ---------- SECTIONS ---------- */
+  .section { padding: 80px 0; border-top: 1px solid var(--line); }
+  @media (max-width: 600px) { .section { padding: 60px 0; } }
+  .section-eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.6;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .section h2 { font-size: clamp(32px, 5vw, 56px); margin-bottom: 20px; max-width: 760px; }
+  .section h2 em { font-style: italic; color: var(--rose); font-weight: 400; }
+
+  /* ---------- 3 PASSOS ---------- */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  @media (max-width: 800px) { .features { grid-template-columns: 1fr; } }
+  .feature {
+    background: var(--paper-2);
+    border-radius: 18px;
+    padding: 32px;
+    border: 1px solid var(--line);
+  }
+  .feature-num {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    color: var(--rose);
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+  .feature h3 { font-family: 'Fraunces', serif; font-size: 22px; margin-bottom: 8px; font-weight: 600; }
+  .feature p { font-size: 14px; opacity: 0.78; }
+
+  /* ---------- DOIS LADOS ---------- */
+  .two-sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 48px;
+  }
+  @media (max-width: 800px) { .two-sides { grid-template-columns: 1fr; } }
+  .side-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .side-card.dark { background: var(--plum); color: var(--paper); border-color: var(--plum); }
+  .side-eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+    font-weight: 500;
+    opacity: 0.65;
+  }
+  .side-card h3 { font-family: 'Fraunces', serif; font-size: 32px; margin-bottom: 12px; font-weight: 600; }
+  .side-card h3 em { font-style: italic; color: var(--rose); font-weight: 400; }
+  .side-card.dark h3 em { color: var(--terracotta); }
+  .side-card p { font-size: 16px; opacity: 0.8; margin-bottom: 24px; flex: 1; }
+  .side-list { list-style: none; padding: 0; margin-bottom: 28px; }
+  .side-list li { padding: 8px 0 8px 22px; position: relative; font-size: 14px; opacity: 0.85; }
+  .side-list li::before { content: '◆'; position: absolute; left: 0; color: var(--rose); opacity: 0.7; }
+  .side-card.dark .side-list li::before { color: var(--terracotta); }
+
+  /* ---------- QUOTE ---------- */
+  .quote-block {
+    background: var(--paper-2);
+    border-left: 3px solid var(--rose);
+    padding: 28px 32px;
+    border-radius: 0 18px 18px 0;
+    margin: 48px 0 0;
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 780px;
+  }
+  .quote-block footer { font-family: 'DM Sans'; font-size: 13px; opacity: 0.65; margin-top: 14px; font-style: normal; }
+
+  /* ---------- FAQ ---------- */
+  .faq { max-width: 760px; margin-top: 48px; }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+  }
+  .faq-q {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  .faq-q::after { content: '+'; font-family: 'DM Sans'; font-weight: 400; font-size: 24px; color: var(--rose); transition: transform 0.2s; }
+  details[open] .faq-q::after { transform: rotate(45deg); }
+  .faq-a { font-size: 15px; opacity: 0.78; margin-top: 12px; padding-right: 30px; }
+
+  /* ---------- FOOTER CTA ---------- */
+  .next-pill {
+    margin: 80px auto 60px;
+    text-align: center;
+    padding: 48px 36px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 24px;
+    max-width: 800px;
+  }
+  .next-pill h3 { font-family: 'Fraunces', serif; font-size: clamp(28px, 4vw, 40px); margin-bottom: 12px; font-weight: 600; }
+  .next-pill h3 em { font-style: italic; color: var(--terracotta); font-weight: 400; }
+  .next-pill p { font-size: 16px; opacity: 0.75; margin-bottom: 28px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+  /* ---------- FOOTER ---------- */
+  footer.site-footer {
+    border-top: 1px solid var(--line);
+    padding: 32px 0;
+    font-size: 13px;
+    opacity: 0.6;
+    text-align: center;
+  }
+
+  /* ---------- MODAL ---------- */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 15, 26, 0.6);
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: var(--paper);
+    border-radius: 20px;
+    max-width: 720px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-header {
+    padding: 24px 28px 16px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-header h3 { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; }
+  .modal-header h3 em { font-style: italic; color: var(--rose); font-weight: 400; }
+  .modal-close {
+    background: var(--paper-2);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--ink);
+    font-family: inherit;
+  }
+  .modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0;
+  }
+  .modal-body iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+  }
+  .modal-placeholder {
+    padding: 60px 40px;
+    text-align: center;
+    color: var(--ink);
+  }
+  .modal-placeholder h4 { font-family: 'Fraunces', serif; font-size: 24px; margin-bottom: 12px; }
+  .modal-placeholder code { background: var(--paper-2); padding: 2px 8px; border-radius: 6px; font-size: 13px; }
+
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     SUBSTITUA OS LINKS DOS GOOGLE FORMS NOS DOIS LUGARES MARCADOS
+     COM "COLE_AQUI_O_LINK_DO_GOOGLE_FORM" (busque no arquivo)
+     ========================================================= -->
+
+<div class="container">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="brand-logo">
+      <span class="brand-name">Tagarelas</span>
+      <span class="brand-tagline">indicação de mulher pra mulher</span>
+    </a>
+    <div class="nav-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#dois-lados">Para quem é</a>
+      <a href="#faq">Perguntas</a>
+    </div>
+    <button class="nav-cta" onclick="openModal('empresa')">Entrar na lista</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">→ Beleza · moda · bem-estar</span>
+        <h1 class="display">Toda marca <em>precisa</em><br/>de uma tagarela.</h1>
+        <p class="hero-sub">Conectamos seu salão, marca ou serviço a creators mulheres reais — daquelas que a sua cliente já segue e confia. Pacote fechado, NF emitida, conteúdo aprovado por você.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openModal('empresa')">Sou empresa →</button>
+          <button class="btn btn-secondary" onclick="openModal('creator')">Sou tagarela</button>
+        </div>
+        <div class="verticals">
+          <span class="vertical-pill">Salões & beleza</span>
+          <span class="vertical-pill">Estética não-médica</span>
+          <span class="vertical-pill">Moda autoral</span>
+          <span class="vertical-pill">Lingerie</span>
+          <span class="vertical-pill">Joalheria</span>
+          <span class="vertical-pill">Perfumaria</span>
+          <span class="vertical-pill">Bem-estar</span>
+        </div>
+      </div>
+      <div class="hero-card-stack" aria-hidden="true">
+        <div class="h-card h-card-1">
+          <div class="h-avatar">M</div>
+          <h4>Marina Cordeiro</h4>
+          <p>Beleza & skincare · São Paulo</p>
+          <div class="stat">
+            <span><strong>14.2k</strong>seguidoras</span>
+            <span><strong>6.4%</strong>engaj.</span>
+          </div>
+        </div>
+        <div class="h-card h-card-2">
+          <div class="h-avatar">B</div>
+          <h4>Beatriz Lemos</h4>
+          <p>Moda autoral · Curitiba</p>
+          <div class="stat">
+            <span><strong>23k</strong>seguidoras</span>
+            <span><strong>5.1%</strong>engaj.</span>
+          </div>
+        </div>
+        <div class="h-card h-card-3">
+          <div class="h-avatar">C</div>
+          <h4>Camila Reis</h4>
+          <p>Bem-estar & yoga · BH</p>
+          <div class="stat">
+            <span><strong>8.7k</strong>seguidoras</span>
+            <span><strong>8.2%</strong>engaj.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section" id="como-funciona">
+    <span class="section-eyebrow">Em 3 passos</span>
+    <h2 class="display">Sem agência, sem briefing eterno, <em>sem enrolação.</em></h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-num">01</div>
+        <h3>Você escolhe o pacote</h3>
+        <p>A partir de R$ 690. Preço fechado, escopo claro, sem negociação caso a caso. Você sabe o que paga e o que recebe.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">02</div>
+        <h3>A gente faz a curadoria</h3>
+        <p>Selecionamos tagarelas com público de mulheres, da sua cidade, do seu nicho. Você aprova quem vai gravar.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-num">03</div>
+        <h3>NF, métrica e tudo certo</h3>
+        <p>Pagamento centralizado, NF automática, dashboard com alcance, salvamentos, cliques e agendamentos atribuídos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOIS LADOS -->
+  <section class="section" id="dois-lados">
+    <span class="section-eyebrow">Para quem é</span>
+    <h2 class="display">Dois lados. <em>Uma mesma rede.</em></h2>
+    <div class="two-sides">
+      <div class="side-card">
+        <div class="side-eyebrow">Para empresas</div>
+        <h3>Cresce o <em>negócio,</em><br/>sem terceirizar a marca.</h3>
+        <p>Você briefa, a gente curadora, tagarelas reais publicam. Você só paga depois de aprovar a seleção.</p>
+        <ul class="side-list">
+          <li>Pacotes a partir de R$ 690 — sem mensalidade</li>
+          <li>Tagarelas auditadas: público &gt;85% feminino</li>
+          <li>NF automática, pagamento via PIX ou cartão</li>
+          <li>Métricas de salvamentos, cliques e agendamentos</li>
+        </ul>
+        <button class="btn btn-rose" onclick="openModal('empresa')">Entrar na lista →</button>
+      </div>
+      <div class="side-card dark">
+        <div class="side-eyebrow">Para tagarelas</div>
+        <h3>Trabalho <em>pago,</em><br/>com marcas que respeitam.</h3>
+        <p>Brief claro, prazo justo, pagamento em até 7 dias via PIX. Sem cobrança humilhante, sem trabalho de graça.</p>
+        <ul class="side-list">
+          <li>Cachês a partir de R$ 250/post</li>
+          <li>Você aceita ou recusa cada convite</li>
+          <li>NF emitida pra você (MEI ou ME)</li>
+          <li>Acesso prioritário a marcas do seu nicho</li>
+        </ul>
+        <button class="btn btn-rose" onclick="openModal('creator')">Quero ser tagarela →</button>
+      </div>
+    </div>
+
+    <div class="quote-block">
+      "A gente está construindo o jeito que sempre quisemos ter trabalhado: claro, justo e com gente que entende quem a gente quer alcançar."
+      <footer>— time fundador, Tagarelas</footer>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <span class="section-eyebrow">Perguntas frequentes</span>
+    <h2 class="display">Respostas <em>diretas.</em></h2>
+    <div class="faq">
+      <details class="faq-item">
+        <summary class="faq-q">Por que "Tagarelas"?</summary>
+        <p class="faq-a">Porque mulher boa de indicar é tagarela. Sempre foi. A gente só vira a chave: o que era usado pra silenciar, agora vira ferramenta de negócio. Tagarelar é trabalho, e tem cachê.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Vocês já estão funcionando?</summary>
+        <p class="faq-a">Estamos em fase beta, montando a primeira leva de empresas e tagarelas. Quem entrar agora na lista recebe condições especiais no lançamento e ajuda a definir como o produto vai funcionar.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Por que só creators mulheres?</summary>
+        <p class="faq-a">Porque o público das marcas que atendemos é majoritariamente feminino, e a indicação entre mulheres tem peso natural maior nessa decisão de compra. Não é exclusão — é foco em onde a engrenagem funciona.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Qualquer empresa pode contratar?</summary>
+        <p class="faq-a">Na fase 1, atendemos negócios de beleza não-médica, moda, lingerie, joalheria, perfumaria e bem-estar. Não é necessário ser empresa liderada por mulher — o que importa é o público-alvo da campanha.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">E dermato, harmonização, odonto?</summary>
+        <p class="faq-a">Esses verticais têm regulação específica de publicidade (CFM, CRO). Vamos atender em uma fase posterior, com playbook próprio que respeite as resoluções dos conselhos.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Quanto custa pra empresa?</summary>
+        <p class="faq-a">Não temos mensalidade. Você paga por campanha, em pacotes fechados a partir de R$ 690 (1 tagarela) até R$ 3.990 (5 tagarelas). Sem fidelidade.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Quanto a tagarela ganha?</summary>
+        <p class="faq-a">Cachês começam em R$ 250 por post para tagarelas com 2k-10k seguidoras e sobem conforme a base e o engajamento. O valor é negociado por campanha e pago em até 7 dias via PIX, com NF emitida pela tagarela.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="next-pill">
+    <h3 class="display">Quer entrar na <em>primeira turma?</em></h3>
+    <p>Estamos selecionando 100 empresas e 200 tagarelas pra fase beta. Quem entrar agora, ajuda a moldar o produto.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <button class="btn btn-rose" onclick="openModal('empresa')">Sou empresa</button>
+      <button class="btn btn-rose" onclick="openModal('creator')">Sou tagarela</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    © 2026 Tagarelas. Indicação de mulher pra mulher. Resultado pro seu negócio.
+  </footer>
+
+</div>
+
+<!-- ============================================ -->
+<!-- MODAL EMPRESA - cole o link do form 1 aqui -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="modal-empresa" onclick="closeIfOverlay(event, 'empresa')">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Sou <em>empresa</em></h3>
+      <button class="modal-close" onclick="closeModal('empresa')" aria-label="Fechar">×</button>
+    </div>
+    <div class="modal-body">
+      <iframe
+        id="iframe-empresa"
+        src="COLE_AQUI_O_LINK_DO_GOOGLE_FORM_DA_EMPRESA"
+        loading="lazy">
+        Carregando…
+      </iframe>
+      <div class="modal-placeholder" id="placeholder-empresa">
+        <h4>Form em configuração</h4>
+        <p style="margin-bottom:16px;">Substitua <code>COLE_AQUI_O_LINK_DO_GOOGLE_FORM_DA_EMPRESA</code> no HTML pelo link do seu Google Form (modo embed).</p>
+        <p style="font-size:13px;opacity:0.6;">Veja o guia <code>guia-publicacao.md</code> que vem junto.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- MODAL CREATOR (TAGARELA) - cole o link do form 2 aqui -->
+<!-- ============================================ -->
+<div class="modal-overlay" id="modal-creator" onclick="closeIfOverlay(event, 'creator')">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Sou <em>tagarela</em></h3>
+      <button class="modal-close" onclick="closeModal('creator')" aria-label="Fechar">×</button>
+    </div>
+    <div class="modal-body">
+      <iframe
+        id="iframe-creator"
+        src="COLE_AQUI_O_LINK_DO_GOOGLE_FORM_DA_TAGARELA"
+        loading="lazy">
+        Carregando…
+      </iframe>
+      <div class="modal-placeholder" id="placeholder-creator">
+        <h4>Form em configuração</h4>
+        <p style="margin-bottom:16px;">Substitua <code>COLE_AQUI_O_LINK_DO_GOOGLE_FORM_DA_TAGARELA</code> no HTML pelo link do seu Google Form (modo embed).</p>
+        <p style="font-size:13px;opacity:0.6;">Veja o guia <code>guia-publicacao.md</code> que vem junto.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(tipo) {
+    document.getElementById('modal-' + tipo).classList.add('show');
+    document.body.style.overflow = 'hidden';
+
+    const iframe = document.getElementById('iframe-' + tipo);
+    const placeholder = document.getElementById('placeholder-' + tipo);
+    if (iframe && iframe.src && !iframe.src.includes('COLE_AQUI')) {
+      placeholder.style.display = 'none';
+      iframe.style.display = 'block';
+    } else {
+      placeholder.style.display = 'block';
+      iframe.style.display = 'none';
+    }
+  }
+  function closeModal(tipo) {
+    document.getElementById('modal-' + tipo).classList.remove('show');
+    document.body.style.overflow = '';
+  }
+  function closeIfOverlay(e, tipo) {
+    if (e.target.classList.contains('modal-overlay')) closeModal(tipo);
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeModal('empresa');
+      closeModal('creator');
+    }
+  });
+</script>
+
+</body>
+</html>
